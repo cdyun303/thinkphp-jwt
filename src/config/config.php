@@ -7,7 +7,7 @@ return [
     // 是否开启双Token
     'double_token' => true,
     // 是否开启Refresh令牌轮换,默认 false,开启时，需要引入缓存处理Refresh令牌状态
-    'refresh_rolling' => true,
+    'refresh_rolling' => false,
     // Access令牌秘钥
     'access_secret' => 'kchka6x1sucafq7z01wfyy3n79ikhfa3',
     // Refresh令牌秘钥
@@ -25,7 +25,7 @@ return [
     // 令牌允许的误差时间,默认 60 秒
     'leeway' => 60,
     // 是否开启单点登录,默认 false,开启时，需要引入缓存处理
-    'single_enable' => true,
+    'single_enable' => false,
     // 缓存类型
     'cache_store' => 'redis',
     // 令牌标识前缀

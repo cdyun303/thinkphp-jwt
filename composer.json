@@ -1,6 +1,6 @@
 {
   "name": "cdyun/thinkphp-jwt",
-  "description": "Thinkphp JWT令牌",
+  "description": "Thinkphp JWT令牌，Json web token 是为了在网络应用环境间传递声明而执行的一种基于JSON的开放标准（(RFC 7519)。该token被设计为紧凑且安全的，特别适用于分布式站点的单点登录（SSO）场景。",
   "license": "MIT",
   "keywords": [
     "php",
