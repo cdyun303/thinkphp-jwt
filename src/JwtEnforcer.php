@@ -373,22 +373,12 @@ class JwtEnforcer
     }
 
     /**
-     * 清空所有缓存
-     * @return bool
-     * @author cdyun(121625706@qq.com)
-     */
-    public static function clearAll(): bool
-    {
-        return CacheService::clearAll();
-    }
-
-    /**
-     * 清空指定标签下的缓存
+     * 清空指定端下的所有Token
      * @param string|array $tagName - 标签名称
      * @return bool
      * @author cdyun(121625706@qq.com)
      */
-    public static function clearByTag(string|array $tagName): bool
+    public static function clearClientUser(string|array $tagName): bool
     {
         return CacheService::clear($tagName);
     }

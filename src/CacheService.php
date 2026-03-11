@@ -57,12 +57,14 @@ class CacheService
     /**
      * 获取缓存标签
      * @param string $tagName
-     * @return string[]
+     * @return string|array
      * @author cdyun(121625706@qq.com)
      */
-    private static function getTag(string $tagName): array
+    private static function getTag(string $tagName): string|array
     {
-        return [self::DEFAULT_TAG, $tagName];
+//        //默认标签
+//        return [self::DEFAULT_TAG, $tagName];
+        return $tagName;
     }
 
     /**
@@ -116,15 +118,5 @@ class CacheService
     public static function clear(string|array $tagName): bool
     {
         return self::cacheHandler()->tag($tagName)->clear();
-    }
-
-    /**
-     * 清空所有缓存
-     * @return bool
-     * @author cdyun(121625706@qq.com)
-     */
-    public static function clearAll(): bool
-    {
-        return self::cacheHandler()->tag(self::DEFAULT_TAG)->clear();
     }
 }
